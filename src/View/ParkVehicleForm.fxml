@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ParkVehicleContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ParkVehicleFormController">
+   <children>
+      <Label fx:id="lblDateAndTime" layoutX="436.0" layoutY="147.0" text="Date And Time" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a7b9c9" height="111.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="103.0" layoutX="36.0" layoutY="270.0" stroke="BLACK" strokeType="INSIDE" width="240.0" />
+      <Label layoutX="129.0" layoutY="34.0" text="Saman Rice Parking App">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="124.0" text="Select Vehicle" />
+      <Label layoutX="35.0" layoutY="159.0" text="Vehicle Type" />
+      <Label layoutX="36.0" layoutY="192.0" text="Driver" />
+      <ComboBox fx:id="cmbSelectVehicle" layoutX="129.0" layoutY="120.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbDriver" layoutX="129.0" layoutY="188.0" prefWidth="150.0" />
+      <TextField fx:id="txtVehicleType" layoutX="130.0" layoutY="155.0" />
+      <Button layoutX="447.0" layoutY="337.0" mnemonicParsing="false" onAction="#btnManagementLogInOnAction" text="Management Login" />
+      <Button layoutX="447.0" layoutY="209.0" mnemonicParsing="false" onAction="#btnParkVehicleOnAction" text="Park Vehicle" />
+      <Button layoutX="447.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnOnDeliveryShift" text="On Delivery Shift" />
+      <Text layoutX="79.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Parking Slot Number" wrappingWidth="149.99999776482582">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblSlot" layoutX="129.0" layoutY="329.0" />
+   </children>
+</AnchorPane>
